@@ -4,6 +4,7 @@
 
 # Built components
 Build
+*.exe
 
 # What appears to be compilation results
 *.mdb
