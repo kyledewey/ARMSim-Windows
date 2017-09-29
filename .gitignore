@@ -1,0 +1,40 @@
+# Emacs temp files
+*~
+\#*\#
+
+# Built components
+Build
+
+# What appears to be compilation results
+*.mdb
+*.dll
+
+# Extra stuff that appears during build
+ARMPluginInterfaces/obj/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
+ARMPluginInterfaces/obj/Debug/ARMPluginInterfaces.csproj.FilesWrittenAbsolute.txt
+ARMSimWindowManager/DockingWindows2/obj/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
+ARMSimWindowManager/DockingWindows2/obj/Debug/DockingWindows2.csproj.FilesWrittenAbsolute.txt
+ARMSimWindowManager/StaticWindows/obj/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
+ARMSimWindowManager/StaticWindows/obj/Debug/StaticWindows.csproj.FilesWrittenAbsolute.txt
+ARMSimWindowManager/obj/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
+ARMSimWindowManager/obj/Debug/ARMSimWindowManager.csproj.FilesWrittenAbsolute.txt
+Plugins/ARMSim.Plugins.ButtonTimerPlugin/obj/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
+Plugins/ARMSim.Plugins.ButtonTimerPlugin/obj/Debug/ARMSim.Plugins.ButtonTimerPlugin.csproj.FilesWrittenAbsolute.txt
+Plugins/ARMSim.Plugins.EightSegmentDisplayPlugin/obj/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
+Plugins/ARMSim.Plugins.EightSegmentDisplayPlugin/obj/Debug/ARMSim.Plugins.EightSegmentDisplayPlugin.csproj.FilesWrittenAbsolute.txt
+Plugins/ARMSim.Plugins.EmbestBoardMemoryMapPlugin/obj/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
+Plugins/ARMSim.Plugins.EmbestBoardMemoryMapPlugin/obj/Debug/ARMSim.Plugins.EmbestBoardMemoryMapPlugin.csproj.FilesWrittenAbsolute.txt
+Plugins/ARMSim.Plugins.EmbestBoardPlugin/obj/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
+Plugins/ARMSim.Plugins.EmbestBoardPlugin/obj/Debug/ARMSim.Plugins.EmbestBoardPlugin.csproj.FilesWrittenAbsolute.txt
+Plugins/ARMSim.Plugins.IntegerDivisionPlugin/obj/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
+Plugins/ARMSim.Plugins.IntegerDivisionPlugin/obj/Debug/ARMSim.Plugins.IntegerDivisionPlugin.csproj.FilesWrittenAbsolute.txt
+Plugins/ARMSim.Plugins.TrafficLightPlugin/obj/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
+Plugins/ARMSim.Plugins.TrafficLightPlugin/obj/Debug/ARMSim.Plugins.TrafficLightPlugin.csproj.FilesWrittenAbsolute.txt
+Plugins/ARMSim.Plugins.UIControls/obj/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
+Plugins/ARMSim.Plugins.UIControls/obj/Debug/ARMSim.Plugins.UIControls.Resources.BIGdontwalk.gif
+Plugins/ARMSim.Plugins.UIControls/obj/Debug/ARMSim.Plugins.UIControls.Resources.BIGwalk.gif
+Plugins/ARMSim.Plugins.UIControls/obj/Debug/ARMSim.Plugins.UIControls.Resources.Hurry.bmp
+Plugins/ARMSim.Plugins.UIControls/obj/Debug/ARMSim.Plugins.UIControls.csproj.FilesWrittenAbsolute.txt
+obj/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
+obj/Debug/ARMSim.Resources.SampleImages.bmp
+obj/Debug/ARMSim.csproj.FilesWrittenAbsolute.txt
