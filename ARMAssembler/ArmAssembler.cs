@@ -203,7 +203,7 @@ public class ArmAssembler {
 	do {
 	    candidate = line.IndexOf(';', candidate);
 	} while (candidate != -1 &&
-		 line[candidate - 1] == '\\');
+		 (candidate != 0 && line[candidate - 1] == '\\'));
 
 	return candidate;
     }
