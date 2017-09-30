@@ -195,12 +195,52 @@ public class ArmAssembler {
         errorCnt++;
     }
 
-    private bool runAssembler(string asFileName, string objFileName)
+    // returns -1 if there is no comment, else the position
+    // where the comment begins
+    private int commentBeginPos(string line) {
+	// look for the first non-backslashed comment
+	int candidate = 0;
+	do {
+	    candidate = line.IndexOf(';', candidate);
+	} while (candidate != -1 &&
+		 line[candidate - 1] == '\\');
+
+	return candidate;
+    }
+
+    private string convertComments(string line) {
+	int pos = commentBeginPos(line);
+	if (pos == -1) {
+	    return line;
+	} else {
+	    return line.Substring(0, pos) + "@" + line.Substring(pos + 1);
+	}
+    }
+    
+    // need to convert assembly files into something GAS understands
+    // returns name of the cleaned version
+    private string convertAsmFile(string filename) {
+	string outputFile = filename + ".gas";
+	try {
+	    string[] lines = File.ReadAllLines(filename);
+	    for (int x = 0; x < lines.Length; x++) {
+		lines[x] = convertComments(lines[x]);
+	    }
+	    File.WriteAllLines(outputFile, lines);
+	    return outputFile;
+	} catch (Exception) {
+	    throw new AsmException("Unable to convert {0}", outputFile);
+	}
+    }
+    
+    private bool runAssembler(string rawAsFileName, string objFileName)
     {
         errorCnt = 0;
         listingState = 0;
         listing.Clear();
         symTabListing.Clear();
+	string asFileName = convertAsmFile(rawAsFileName);
+	
         using (Process p = new Process())
         {
             p.StartInfo.UseShellExecute = false;
