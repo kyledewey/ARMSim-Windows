@@ -76,7 +76,7 @@ public class ArmAssembler {
 		for( int i=0; i<passComplete.Length; i++)
 			passComplete[i] = false;
         //tempFolder = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
-        tempFolder = System.IO.Path.GetTempPath();
+	tempFolder = "./"; //System.IO.Path.GetTempPath();
         listing = new List<string>(128);
         symTabListing = new List<string>(32);
         assemblerProg = System.IO.Path.GetDirectoryName(System.Windows.Forms.Application.ExecutablePath);
