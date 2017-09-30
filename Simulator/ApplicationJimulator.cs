@@ -159,8 +159,11 @@ namespace ARMSim.Simulator
 
         public override void OutputConsoleString(string fmt, params object[] parms)
         {
-            if (ConsoleOutput == null)
+            if (ConsoleOutput == null) {
+		// hack to always output
+		Console.WriteLine(fmt, parms);
                 return;
+	    }
 
             string str = string.Format(fmt, parms);
             foreach (char ch in str)
