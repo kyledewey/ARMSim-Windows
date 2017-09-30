@@ -16,7 +16,7 @@ namespace ARMSim.Batch
             //create a new instance of the simulator engine
             ApplicationJimulator jm = new ApplicationJimulator(parsedArgs);
             jm.ARMPreferences = new ARMPreferences();
-            jm.ARMPreferences.PluginPreferences.EnableSWIExtendedInstructions();
+            jm.ARMPreferences.PluginPreferences.EnableSWIExtendedInstructions("Legacy");
 
             ARMSim.Preferences.PluginPreferences pref = new ARMSim.Preferences.PluginPreferences();
             pref.EnableSWIExtendedInstructions(parsedArgs.SWI);
