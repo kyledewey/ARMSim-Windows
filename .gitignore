@@ -10,8 +10,12 @@ Build
 *.mdb
 *.dll
 *.pdb
+*.resources
 
 # Extra stuff that appears during build
+ARMSimWindowManager/bin/Debug/ARMSimWindowManager.dll.config
+Plugins/ARMSim.Plugins.ButtonTimerPlugin/bin/Debug/ARMSim.Plugins.ButtonTimerPlugin.dll.config
+
 ARMPluginInterfaces/obj/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
 ARMPluginInterfaces/obj/Debug/ARMPluginInterfaces.csproj.FilesWrittenAbsolute.txt
 ARMSimWindowManager/DockingWindows2/obj/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
