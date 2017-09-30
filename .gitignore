@@ -9,6 +9,7 @@ Build
 # What appears to be compilation results
 *.mdb
 *.dll
+*.pdb
 
 # Extra stuff that appears during build
 ARMPluginInterfaces/obj/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
