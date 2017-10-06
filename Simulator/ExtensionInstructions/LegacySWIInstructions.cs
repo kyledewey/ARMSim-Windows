@@ -371,7 +371,7 @@ namespace ARMSim.Simulator.ExtensionInstructions
                     case 0x68:
                         {
                             uint handle = mIhost.getReg(0);
-                            if (handle < mFiles.Count) {
+                            if (handle < mFiles.Count && handle != 1) {
                                 mFiles[(int)handle].Close();
                                 mFiles[(int)handle] = null;
                                 mIhost.cf = false;
